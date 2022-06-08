@@ -384,8 +384,9 @@ def ghost_game(char_list):
     print('You have run out of lives! GAME OVER!!!!')
     return p_score
 ​
-while True:
-    score = ghost_game(ghost_chars)
+    while True:
+
+        score = ghost_game(ghost_chars)
     if score > hscore:
         print(f'New High Score!! {score} Points!')
         hscore = score
@@ -398,4 +399,4 @@ while True:
             print('Starting a new game')
         case 'N' | 'NO':
             print('Have a good day!')
-        break
+    break
