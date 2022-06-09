@@ -1,12 +1,12 @@
-def add_up():
-       num1 = input("what is the first number you'd like to add up? /n")
-       num2 = input("what is the second number you'd like to add up? /n")
+#def add_up():
+#    num1 = input("what is the first number you'd like to add up? /n")
+ #   num2 = input("what is the second number you'd like to add up? /n")
 
-    try:
-        if (num1 + num2).isnumeric():
+ #   try:
+ #       if (num1 + num2).isnumeric():
             
-    except:
-        print("there is an error")
+  #  except:
+  #      print("there is an error")
 
 
 
@@ -14,10 +14,12 @@ def add_up():
 
 
 
-light = False
+#light = False
 
 def light_switch():
-    global: light
+    
+#    global:
+
     if light:
         print("whoa! it's bright in here")
         light = False
@@ -26,8 +28,8 @@ def light_switch():
         print("who turned out the lights")
         light = True
 
-light_switch()
-light_switch()
+#light_switch()
+#light_switch()
 
 ######################
 
@@ -344,7 +346,7 @@ program()
 #########################################
 
 from random import randint as r
-​
+
 ghost_chars = [
     'Peter Venkman', 'Raymond Stantz', 'Egon Spengler',
     'Winston Zeddemore', 'Dana Barrett', 'Lenny Clotch',
@@ -354,7 +356,7 @@ ghost_chars = [
     'John Conner', 'Kyle Reece', 'Sarah Connor'
 ]
 hscore = 0
-​
+
 def ghost_game(char_list):
     p_lives = 3
     p_score = 0
@@ -383,7 +385,7 @@ def ghost_game(char_list):
                     p_score += 1
     print('You have run out of lives! GAME OVER!!!!')
     return p_score
-​
+
     while True:
 
         score = ghost_game(ghost_chars)
@@ -399,4 +401,4 @@ def ghost_game(char_list):
             print('Starting a new game')
         case 'N' | 'NO':
             print('Have a good day!')
-    break
+   
