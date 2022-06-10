@@ -22,3 +22,12 @@
 #three {
     background-color: red;
 }
+
+@font-face {
+    font-family: <!--choose a name-->;
+    src: url(/week1/day4/image/PokemonTCGSymbols2018-Icycatelf.ttf);
+}
+p {
+    font-family: <!--choose a name-->;
+    color: rgb(158, 158, 158);
+    font-size: 18px;
