@@ -401,4 +401,51 @@ def ghost_game(char_list):
             print('Starting a new game')
         case 'N' | 'NO':
             print('Have a good day!')
+
+#######################################
+
+class Person():
+    def __init__(self, name: str, age: int, eye_color: str, hair_color: str):
+        self.name = name
+        self.age = age
+        self.eye = eye_color
+        self.hair = hair_color
+
+npc_list = []
+player = Person("Ash", 30, 'Green', 'Light brown')
+npc1 = Person("Grant", 30, 'hazel', 'strawberry blonde')
+npc2 = Person("Chris", 29, 'brown', 'black')
+npc3 = Person("James", 46, 'blue', 'red')
+npc4 = Person("Tyler", 28, 'blue', 'purple')
+npc5 = Person("Danny", 35, 'bleach blonde', 'darkblonde')
+npc6 = Person("Gaz", 65, 'light brown', 'none')
+
+npc_list.append(npc1)
+npc_list.append(npc2)
+npc_list.append(npc3)
+npc_list.append(npc4)
+npc_list.append(npc5)
+npc_list.append(npc6)
+
+def player_info(obj):
+    print(f"Hello! {obj.name}, you have loverly {obj.eye} eyes, and {obj.hair} hair. You are {obj.age} years old")
+
+def npc_info(name: str, npc_list):
+    for obj in npc_list:
+        if name.title() == obj.name:
+            print(f"Their name:{obj.name}, they have {obj.eye} eyes, and {obj.hair} hair. they are {obj.age} years old")
+
+def person_inspect():
+    player_choice = input("Who do you want to inspect? [M]e // [O]ther")
+    match player_choice.upper():
+        case 'M' | 'ME': player_info(player)
+        case 'O' | 'OTHER':
+            print('avalible choices:')
+            for obj in npc_list:
+                print(obj.name)
+            name_query = input('Enter their name >: ')
+            npc_info(name_query, npc_list)
+
+person_inspect()
+
    
