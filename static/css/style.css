@@ -1,0 +1,59 @@
+body{
+    background-color:deepskyblue;
+    color: crimson;
+}
+
+.mobile, .desktop{
+    display: none;
+}
+
+/*
+@media (max-width: 500px) {
+    body {
+        color: blue;
+    }
+}
+*/
+
+body {
+    padding: 25px;
+    background-color: deepskyblue;
+    color: rgb(237, 66, 4);
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: rgba(90, 28, 32, 0.838);
+    color: white;
+  }
+
+
+
+@media (orientention:portrait) {
+    .title {
+        color:yellow;
+        background-color: black;
+        text-align: center;
+        padding: 5%;
+    }
+    .mobile{
+        display:inline-block
+    }
+}
+
+@media (orientation: landscape) {
+    .Subtitle {
+        color: green;
+        background-color: orange;
+        text-align: center;
+        padding: 5%;
+    }
+}
+
+.desktop {
+    display:inline-block;
+}
+
+.hidden {
+    display: none
+}
